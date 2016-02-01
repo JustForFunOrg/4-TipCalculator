@@ -65,12 +65,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$0.00" textAlignment="right" minimumFontSize="48" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="050-qt-k4y" userLabel="SumTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$0.00" textAlignment="right" minimumFontSize="48" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="050-qt-k4y" userLabel="SumTextField">
                                 <rect key="frame" x="300" y="52" width="280" height="104"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="ngY-Ci-AjN"/>
+                                    <constraint firstAttribute="width" constant="280" id="xax-oC-fMv"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="60"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                         </subviews>
@@ -83,17 +83,17 @@
                             <constraint firstItem="4Bh-Oi-4JU" firstAttribute="baseline" secondItem="OpJ-Xq-WRn" secondAttribute="baseline" id="D1t-Gz-bqD"/>
                             <constraint firstItem="Afv-KZ-TOa" firstAttribute="baseline" secondItem="ajD-Ik-Eup" secondAttribute="baseline" id="GI3-7S-iWj"/>
                             <constraint firstItem="4Bh-Oi-4JU" firstAttribute="leading" secondItem="Afv-KZ-TOa" secondAttribute="leading" id="R7d-Qh-hi3"/>
+                            <constraint firstItem="050-qt-k4y" firstAttribute="top" secondItem="AZp-kc-fRA" secondAttribute="topMargin" constant="52" id="bYL-kY-bx2"/>
                             <constraint firstItem="ajD-Ik-Eup" firstAttribute="top" secondItem="OpJ-Xq-WRn" secondAttribute="bottom" constant="29" id="bvQ-SU-O17"/>
                             <constraint firstItem="sQh-tz-quM" firstAttribute="centerY" secondItem="AZp-kc-fRA" secondAttribute="centerY" id="cCv-Qv-RLV"/>
                             <constraint firstItem="sQh-tz-quM" firstAttribute="trailing" secondItem="AZp-kc-fRA" secondAttribute="trailingMargin" id="cN8-vG-pmp"/>
                             <constraint firstItem="Afv-KZ-TOa" firstAttribute="leading" secondItem="ajD-Ik-Eup" secondAttribute="trailing" constant="8" symbolic="YES" id="cX7-aE-ein"/>
-                            <constraint firstItem="050-qt-k4y" firstAttribute="top" secondItem="21n-25-nGi" secondAttribute="bottom" constant="32" id="clR-O9-w9s"/>
-                            <constraint firstItem="050-qt-k4y" firstAttribute="trailing" secondItem="4Bh-Oi-4JU" secondAttribute="trailing" id="esW-43-CKf"/>
+                            <constraint firstItem="OpJ-Xq-WRn" firstAttribute="top" secondItem="050-qt-k4y" secondAttribute="bottom" constant="30" id="fo1-KZ-BI7"/>
                             <constraint firstItem="sQh-tz-quM" firstAttribute="leading" secondItem="OpJ-Xq-WRn" secondAttribute="leading" id="naL-Fc-n71"/>
                             <constraint firstItem="4Bh-Oi-4JU" firstAttribute="centerX" secondItem="Afv-KZ-TOa" secondAttribute="centerX" id="oL6-r2-6N2"/>
                             <constraint firstItem="sQh-tz-quM" firstAttribute="top" secondItem="ajD-Ik-Eup" secondAttribute="bottom" constant="28" id="pDd-gf-bIR"/>
                             <constraint firstItem="ajD-Ik-Eup" firstAttribute="firstBaseline" secondItem="Afv-KZ-TOa" secondAttribute="firstBaseline" id="pN3-3u-9LP"/>
-                            <constraint firstItem="OpJ-Xq-WRn" firstAttribute="top" secondItem="050-qt-k4y" secondAttribute="bottom" constant="30" id="tZj-iV-HZP"/>
+                            <constraint firstItem="050-qt-k4y" firstAttribute="trailing" secondItem="4Bh-Oi-4JU" secondAttribute="trailing" id="xbO-Vb-Wme"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -103,7 +103,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tip Calculator" id="C0X-oH-Mss"/>
                     <connections>
-                        <outlet property="sumLabel" destination="050-qt-k4y" id="Ne9-5x-GF4"/>
+                        <outlet property="amountTextField" destination="050-qt-k4y" id="99x-mQ-pzU"/>
                         <outlet property="tipPercentLabel" destination="OpJ-Xq-WRn" id="Ze9-CI-VlB"/>
                         <outlet property="tipPercentSlider" destination="sQh-tz-quM" id="QCx-Kb-MV0"/>
                         <outlet property="tipResultLabel" destination="4Bh-Oi-4JU" id="PjP-AX-vD2"/>
