@@ -18,7 +18,6 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var tipPercentSlider: UISlider!
     
-    // MARK: Init
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,6 +27,7 @@ class MainViewController: UIViewController {
     }
     
     // MARK: Keyboard
+    
     func addDoneButtonToKeyboard() {
         let numberToolbar = UIToolbar(frame: CGRectMake(0, 0, self.view.frame.size.width, 50))
         numberToolbar.barStyle = UIBarStyle.Default
@@ -51,6 +51,7 @@ class MainViewController: UIViewController {
 
     
     // MARK: Helpers
+    
     func updateTipPersentLabel() {
         let percentValue = Int(tipPercentSlider.value)
         tipPercentLabel.text = "Tip (\(percentValue)%)"
@@ -97,6 +98,7 @@ class MainViewController: UIViewController {
 }
 
 // MARK: - UITextFieldDelegate
+
 extension MainViewController : UITextFieldDelegate {
     
     func textFieldDidEndEditing(textField: UITextField) {
